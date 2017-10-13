@@ -1,0 +1,19 @@
+{
+    "name": "saschawiener/flysystem-webdav",
+    "description": "Flysystem adapter improvement for WebDAV",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sascha Wiener",
+            "email": "sascha.wiener@gmx.de"
+        }
+    ],
+    "require": {
+        "league/flysystem-webdav": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaschaWiener\\Flysystem\\WebDAV\\": "src"
+        }
+    }
+}
