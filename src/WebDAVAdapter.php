@@ -11,11 +11,20 @@
 
 namespace SaschaWiener\Flysystem\WebDAV;
 
+use League\Flysystem\Config as Config;
+
 class WebDAVAdapter extends \League\Flysystem\WebDAV\WebDAVAdapter
 {
 
     /**
-     * @inheritdoc
+     * Stream delegator.
+     *
+     * @param string   $path
+     * @param resource $resource
+     * @param Config   $config
+     * @param string   $fallback
+     *
+     * @return mixed fallback result
      */
     protected function stream($path, $resource, Config $config, $fallback)
     {
