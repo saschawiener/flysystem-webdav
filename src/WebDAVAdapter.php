@@ -12,6 +12,7 @@
 namespace SaschaWiener\Flysystem\WebDAV;
 
 use League\Flysystem\Config as Config;
+use League\Flysystem\Util;
 
 class WebDAVAdapter extends \League\Flysystem\WebDAV\WebDAVAdapter
 {
